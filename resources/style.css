@@ -58,10 +58,10 @@ i:hover{
   );
   mask-image: linear-gradient(
     to right,
-    transparent 0%,
+    transparent -120%,
     black 15%,
     black 85%,
-    transparent 100%
+    transparent 140%
   );
 }
 
@@ -113,7 +113,7 @@ i:hover{
 #navbar_table {
   margin-top: 15px;
   border: 1px solid rgba(124, 124, 124);
-  border-radius: 0px; 
+  border-radius: 20px; 
   display: inline-table;
   min-width: 100%;
 }
@@ -128,7 +128,7 @@ i:hover{
   height: 28px;
   margin-top: 16px;
   width: 0;
-  background-color: #787878;
+  background-color: #00a0c4;
   transition: all 0.4s ease;
   z-index: -2;
   border-radius: 30px;
@@ -138,6 +138,7 @@ i:hover{
 
 .nav-item {
   position: relative;
+  font-size: large;
 }
 
 .nav-item a {
@@ -153,16 +154,18 @@ td {
 
 td a {
   text-decoration: none;
-  color: rgb(121, 121, 121);
+  font-weight: bolder;
+  color: #00a0c4;
   
 }
 
 #current {
-  background-color: #787878;
+  background-color: #00a0c4;
 }
 
 .navbar-container:hover #current {
   background-color: #00000000;
+  color: white;
 }
 
 /* If you have a light theme, you might want to add a media query for light mode */
